@@ -1,28 +1,28 @@
-# imagemin-gifsicle [![Build Status](https://travis-ci.org/imagemin/imagemin-gifsicle.svg?branch=master)](https://travis-ci.org/imagemin/imagemin-gifsicle)
+# imagemin-gifsicle-changba [![Build Status](https://travis-ci.org/ChangbaFE/imagemin-gifsicle.svg?branch=master)](https://travis-ci.org/ChangbaFE/imagemin-gifsicle)
 
 > Imagemin plugin for [Gifsicle](https://www.lcdf.org/gifsicle/)
 
 ## Install
 
 ```
-$ npm install imagemin-gifsicle
+$ npm install imagemin-gifsicle-changba
 ```
 
 ## Usage
 
 ```js
 const imagemin = require('imagemin');
-const imageminGifsicle = require('imagemin-gifsicle');
+const imageminGifsicle = require('imagemin-gifsicle-changba');
 
 (async () => {
-	await imagemin(['images/*.gif'], {
-		destination: 'build/images',
-		plugins: [
-			imageminGifsicle()
-		]
-	});
+  await imagemin(['images/*.gif'], {
+    destination: 'build/images',
+    plugins: [
+      imageminGifsicle()
+    ]
+  });
 
-	console.log('Images optimized');
+  console.log('Images optimized');
 })();
 ```
 
